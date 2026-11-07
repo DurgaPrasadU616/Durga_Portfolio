@@ -1,0 +1,226 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #F8FAFC;
+  --color-secondary: #F1F5F9;
+  --color-card: #FFFFFF;
+  --color-brand: #5277E8;
+  --color-brand-deep: #3b62e6;
+  --color-brand-soft: #E8EEFF;
+  --color-brand-pale: #eef3ff;
+  --color-ink: #172033;
+  --color-ink-soft: #64748B;
+  --color-line: #E5EAF2;
+
+  --font-display: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
+
+  /* Radius scale — hard cap at 24px (1.5rem) */
+  --radius-card: 1.25rem;   /* 20 */
+  --radius-3xl: 1.5rem;     /* 24 */
+  --radius-4xl: 1.5rem;     /* 24 */
+
+  --shadow-soft: 0 1px 2px rgba(16, 24, 40, 0.04);
+  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.05), 0 6px 16px -10px rgba(16, 24, 40, 0.08);
+  --shadow-lift: 0 2px 4px rgba(16, 24, 40, 0.04), 0 20px 48px -24px rgba(16, 24, 40, 0.14);
+  --shadow-hover: 0 2px 6px rgba(16, 24, 40, 0.06), 0 24px 56px -26px rgba(16, 24, 40, 0.22);
+  --shadow-glow: 0 0 0 1px rgba(82, 119, 232, 0.14), 0 24px 60px -24px rgba(82, 119, 232, 0.26);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  scroll-behavior: smooth;
+  --nav-h: 4.5rem;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  overflow-x: clip;
+}
+
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+/* Lenis recommended CSS */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+::selection {
+  background: var(--color-brand);
+  color: #fff;
+}
+
+/* ── Unified vertical rhythm ────────────────────────────────
+   Single source of truth for section spacing. Sections use
+   64px (mobile) / 80px (desktop) per side, so adjacent
+   sections breathe at 128px / 160px instead of 256px. */
+.section-y {
+  padding-block: 4rem;
+}
+@media (min-width: 40em) {
+  .section-y {
+    padding-block: 5rem;
+  }
+}
+
+/* Reusable surfaces — solid, no glassmorphism */
+@utility card {
+  background: var(--color-card);
+  border: 1px solid var(--color-line);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Interactive surface: lifts + soft shadow on hover */
+@utility card-hover {
+  border: 1px solid var(--color-line);
+  background: var(--color-card);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 0.4s var(--ease-out-expo),
+    box-shadow 0.4s var(--ease-out-expo),
+    border-color 0.4s var(--ease-out-expo);
+}
+.card-hover:hover {
+  transform: translateY(-3px);
+  border-color: rgba(82, 119, 232, 0.32);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Subtle brand emphasis on hover */
+@utility card-glow {
+  border: 1px solid var(--color-line);
+  background: var(--color-card);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 0.4s var(--ease-out-expo),
+    box-shadow 0.4s var(--ease-out-expo),
+    border-color 0.4s var(--ease-out-expo);
+}
+.card-glow:hover {
+  transform: translateY(-3px);
+  border-color: rgba(82, 119, 232, 0.28);
+  box-shadow: var(--shadow-glow);
+}
+
+/* Hairline grid: gap-px + bg-line creates 1px dividers between cells */
+@utility hairline-grid {
+  gap: 1px;
+  overflow: hidden;
+  background: var(--color-line);
+  border: 1px solid var(--color-line);
+  border-radius: 1.5rem;
+}
+.hairline-grid > * {
+  background: var(--color-card);
+}
+/* Interactive cells inside a hairline grid (unlayered so it beats the cell fill) */
+.hairline-grid > a:hover,
+.hairline-grid > button:hover {
+  background: var(--color-bg);
+}
+
+/* Divided editorial rows inside a single panel */
+@utility divided-panel {
+  overflow: hidden;
+  background: var(--color-card);
+  border: 1px solid var(--color-line);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+.divided-panel > * {
+  border-bottom: 1px solid var(--color-line);
+}
+.divided-panel > *:last-child {
+  border-bottom: none;
+}
+
+/* Soft blurred gradient wash — used sparingly for hero/CTA emphasis */
+@utility blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(110px);
+  pointer-events: none;
+  opacity: 0.55;
+  z-index: -10;
+}
+
+@utility grad-text {
+  background: linear-gradient(115deg, #3b62e6 0%, #5277E8 45%, #7aa6ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility container-x {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 72rem;
+  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+/* subtle focus ring shared across interactive elements */
+@utility focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  box-shadow: 0 0 0 3px var(--color-brand-soft);
+}
+
+@utility scroll-slim {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line) transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #172033 !important;
+  }
+  header,
+  footer,
+  nav,
+  .no-print,
+  [aria-hidden="true"],
+  .blob {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  @page {
+    margin: 1.2cm;
+  }
+}
