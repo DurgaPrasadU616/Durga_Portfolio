@@ -23,25 +23,25 @@ type FeaturedEntry = {
 const featured: FeaturedEntry[] = [
   {
     slug: "shelfwise-ai",
-    category: "AI / Computer Vision",
+    category: "AI & Computer Vision",
     description:
-      "AI-assisted retail inventory platform for shelf monitoring, low-stock detection and inventory analytics.",
-    tech: ["Python", "TensorFlow", "PyTorch", "OpenCV", "FastAPI", "React"],
+      "AI-powered inventory monitoring system designed to detect shelf issues and support inventory management.",
+    tech: ["Python", "OpenCV", "TensorFlow", "PyTorch", "FastAPI", "React"],
     image: "/projects/shelfwise-ai.jpg",
     host: "shelf-wise-ai.vercel.app",
   },
   {
     slug: "rightlaw",
-    category: "Generative AI / LegalTech",
+    category: "Generative AI & LegalTech",
     description:
-      "AI-powered legal document analysis platform generating structured IRAC summaries, evidence, arguments and conclusions.",
+      "AI-powered legal document analysis platform featuring OCR, document summaries, and source-referenced insights.",
     tech: [
-      "React",
       "Next.js",
+      "React",
       "Tailwind CSS",
+      "Gemini API",
       "Supabase",
       "PostgreSQL",
-      "Gemini/OpenAI APIs",
       "Tesseract OCR",
       "Chroma",
     ],
@@ -49,19 +49,19 @@ const featured: FeaturedEntry[] = [
   },
   {
     slug: "civicmind",
-    category: "Full Stack / Civic Technology",
+    category: "Smart Governance",
     description:
-      "Civic engagement platform for public issue reporting, location tagging, status tracking and community voting.",
-    tech: ["React", "Node.js", "Express", "MongoDB/PostgreSQL", "Maps API"],
+      "Civic issue reporting platform that helps users submit, track, and discuss local problems.",
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "Maps API"],
     image: "/projects/civicmind.jpg",
     host: "aicivilmind.vercel.app",
   },
   {
     slug: "sprint-field-magic",
-    category: "Frontend / Project Management",
+    category: "Project Management",
     description:
-      "Agile project management platform with interactive task boards, custom workflows and team activity tracking.",
-    tech: ["React", "JavaScript", "HTML5", "CSS3", "REST APIs"],
+      "Agile project management application for organizing tasks and tracking team progress.",
+    tech: ["React", "JavaScript", "HTML", "CSS", "REST APIs"],
     image: "/projects/sprint-field-magic.jpg",
     host: "sprint-field-magic.lovable.app",
   },

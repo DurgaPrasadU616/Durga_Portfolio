@@ -25,35 +25,34 @@ const interTight = Inter_Tight({
 export const metadata: Metadata = {
   metadataBase: new URL("https://udp.dev"),
   title: {
-    default: `${Info.name} — Frontend, Full Stack & AI Developer`,
+    default: `${Info.name} — Frontend Developer | Full Stack Developer | Generative AI Enthusiast`,
     template: `%s · ${Info.name}`,
   },
-  description:
-    "B.Tech CSE student building responsive web applications and AI-powered solutions. Frontend Developer, Full Stack Developer, and Generative AI enthusiast.",
+  description: `${Info.name} — ${Info.intro} Open to internship opportunities.`,
   keywords: [
-    "Full Stack Developer",
     "Frontend Developer",
-    "Generative AI",
+    "Full Stack Developer",
+    "Generative AI Enthusiast",
     "React",
     "Next.js",
     "TypeScript",
-    "Software Engineering Intern",
+    "Python",
+    "B.Tech CSE Student",
+    "Open to Internship Opportunities",
     Info.name,
   ],
   authors: [{ name: Info.name }],
   openGraph: {
-    title: `${Info.name} — Frontend, Full Stack & AI Developer`,
-    description:
-      "B.Tech CSE student building responsive web applications and AI-powered solutions.",
+    title: `${Info.name} — ${Info.role}`,
+    description: `${Info.intro} Open to internship opportunities.`,
     url: "https://udp.dev",
-    siteName: "dp.dev",
+    siteName: "udp.dev",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${Info.name} — Frontend, Full Stack & AI Developer`,
-    description:
-      "B.Tech CSE student building responsive web applications and AI-powered solutions.",
+    title: `${Info.name} — ${Info.role}`,
+    description: `${Info.intro} Open to internship opportunities.`,
   },
 };
 
@@ -62,7 +61,7 @@ const jsonLd = {
   "@type": "Person",
   name: Info.name,
   url: "https://udp.dev",
-  jobTitle: "Frontend & Full Stack Developer",
+  jobTitle: Info.role,
   description: Info.intro,
   email: "mailto:" + Info.email,
   address: { "@type": "PostalAddress", addressRegion: Info.location },

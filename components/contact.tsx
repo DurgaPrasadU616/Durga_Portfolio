@@ -51,7 +51,7 @@ export function Contact() {
   return (
     <section id="contact" className="relative isolate overflow-hidden section-y">
       <div className="container-x">
-        <SectionHeading eyebrow="Contact" title="Have an opportunity or an interesting idea? Let's connect." />
+        <SectionHeading eyebrow="Contact" title="Have an opportunity or project in mind? Let's connect and build something meaningful." />
 
         <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           {/* left — info */}
@@ -63,8 +63,8 @@ export function Contact() {
           >
             <h3 className="text-2xl font-bold tracking-tight">Prefer email?</h3>
             <p className="mt-3 leading-relaxed text-ink-soft">
-              I reply within a day. Whether it&apos;s an internship opportunity, a collaboration,
-              or just an interesting idea — I&apos;d love to hear it.
+              Whether it&apos;s an internship opportunity, a project, or an idea — I&apos;d like to
+              hear from you.
             </p>
 
             <button

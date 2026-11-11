@@ -74,7 +74,7 @@ export function Projects() {
   return (
     <section id="projects" className="relative section-y">
       <div className="container-x">
-        <SectionHeading eyebrow="Case studies" title="Products engineered end to end" />
+        <SectionHeading eyebrow="Case studies" title="Projects built end to end" />
 
         {/* search + filters */}
         <div className="mx-auto mb-10 flex max-w-2xl flex-col gap-4">

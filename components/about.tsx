@@ -1,28 +1,16 @@
 "use client";
 
-import { GraduationCap, Rocket, Cpu } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 
 import { FadeUp } from "@/components/motion";
 import { Section } from "@/components/section";
 
 const highlights = [
   {
-    icon: Rocket,
-    label: "Current focus",
-    title: "Frontend, full stack & Gen AI",
-    body: "Building responsive web applications and AI-powered solutions — from React interfaces to Python AI pipelines.",
-  },
-  {
     icon: GraduationCap,
     label: "Education",
     title: "B.Tech CSE · ANU CET · CGPA 8.2",
     body: "B.Tech Computer Science & Engineering at ANU College of Engineering & Technology (2023–2027), reinforced by NxtWave CCBP 4.0 Academy full stack development training.",
-  },
-  {
-    icon: Cpu,
-    label: "Career goal",
-    title: "Software / AI Engineer",
-    body: "Seeking software engineering, frontend, full stack, and Generative AI internship opportunities to build impactful products at scale.",
   },
 ];
 
@@ -49,22 +37,10 @@ export function About() {
           <div className="space-y-5">
             <FadeUp delay={0.05}>
               <p className="text-lg leading-relaxed text-ink-soft">
-                I&apos;m Ungarala Durga Prasad, a B.Tech Computer Science &amp; Engineering student at
-                ANU College of Engineering &amp; Technology, interested in frontend development,
-                full stack engineering, and Generative AI.
-              </p>
-            </FadeUp>
-            <FadeUp delay={0.1}>
-              <p className="leading-relaxed text-ink-soft">
-                Trained through the NxtWave CCBP 4.0 Academy full stack development program, I build
-                responsive web applications and AI-powered solutions that solve real-world problems
-                — with a focus on clean code, great UX, and thoughtful engineering.
-              </p>
-            </FadeUp>
-            <FadeUp delay={0.15}>
-              <p className="text-sm text-ink-soft">
-                <span className="font-semibold text-ink">Expected graduation: 2027.</span>{" "}
-                Currently available for internship opportunities.
+                B.Tech Computer Science student at ANU College of Engineering &amp; Technology. I
+                enjoy building user-friendly web applications and exploring Generative AI. Through
+                academic projects, hackathons and hands-on development, I keep improving my
+                problem-solving and software development skills.
               </p>
             </FadeUp>
           </div>

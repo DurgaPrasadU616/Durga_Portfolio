@@ -51,7 +51,7 @@ export function Stats() {
   return (
     <section id="stats" className="relative section-y">
       <div className="container-x">
-        <SectionHeading eyebrow="By the numbers" title="A track record, not a wishlist" />
+        <SectionHeading eyebrow="By the numbers" title="A quick snapshot" />
 
         <div ref={ref} className="hairline-grid grid grid-cols-2 lg:grid-cols-4">
           {stats.map((s, i) => (

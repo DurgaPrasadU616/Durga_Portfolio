@@ -77,7 +77,7 @@ export function Navbar() {
             <span className="grid size-8 place-items-center rounded-[10px] bg-gradient-to-br from-brand-deep to-brand text-[0.8rem] font-bold text-white shadow-sm">
               DP
             </span>
-            <span className="text-[0.95rem]">dp.dev</span>
+            <span className="text-[0.95rem]">udp.dev</span>
           </a>
 
           <ul className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 lg:flex">

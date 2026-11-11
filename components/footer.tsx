@@ -57,7 +57,7 @@ export function Footer() {
         <div className="mt-14 border-t border-line pb-10 pt-8 sm:mt-16">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <p className="text-sm text-ink-soft">
-              © {new Date().getFullYear()} {Info.name}. Crafted by hand — no templates.
+              © {new Date().getFullYear()} {Info.name}.
             </p>
             <ul className="flex flex-wrap items-center justify-center gap-6">
               {nav.map((n) => (

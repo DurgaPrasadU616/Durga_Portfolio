@@ -41,23 +41,6 @@ export function Education() {
                   Rigorous computer science curriculum with strong emphasis on data structures,
                   algorithms, database systems, and modern software engineering principles.
                 </p>
-
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {[
-                    "Data Structures & Algorithms",
-                    "Database Management Systems",
-                    "Computer Networks",
-                    "Operating Systems",
-                    "AI & Machine Learning",
-                  ].map((subject) => (
-                    <span
-                      key={subject}
-                      className="rounded-full border border-line bg-bg px-3 py-1 text-xs font-medium text-ink-soft"
-                    >
-                      {subject}
-                    </span>
-                  ))}
-                </div>
               </div>
 
               {/* Right: Score + Training, separated by hairlines */}
@@ -70,7 +53,6 @@ export function Education() {
                     <span className="text-4xl font-bold tracking-tight text-brand">8.2</span>
                     <span className="text-sm font-semibold text-ink-soft">/ 10</span>
                   </div>
-                  <p className="mt-1 text-xs text-ink-soft">Consistent academic performance</p>
                 </div>
 
                 <div className="mt-5 border-t border-line pt-5">

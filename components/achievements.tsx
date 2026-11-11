@@ -19,7 +19,7 @@ export function Achievements() {
     <Section id="achievements">
       <SectionHeading
         eyebrow="Achievements"
-        title="Proof in numbers, quality over quantity"
+        title="Recognition & key milestones"
       />
       <StaggerList className="hairline-grid grid md:grid-cols-3">
         {achievements.map((a) => {

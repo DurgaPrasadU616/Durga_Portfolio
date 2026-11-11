@@ -1,10 +1,10 @@
 export const Info = {
   name: "Ungarala Durga Prasad",
   firstName: "Durga Prasad",
-  role: "Frontend & Full Stack Developer",
+  role: "Frontend Developer | Full Stack Developer | Generative AI Enthusiast",
   tagline: "Building meaningful digital experiences with modern web technologies and AI.",
   intro:
-    "I'm a Computer Science student passionate about building responsive web applications and AI-powered solutions that solve real-world problems.",
+    "I'm a Computer Science Engineering student passionate about building responsive web applications and AI-powered solutions that solve real-world problems.",
   email: "durgaprasadu616@gmail.com",
   phone: "+91-9908537943",
   location: "Andhra Pradesh, India",
@@ -22,7 +22,6 @@ export type SkillGroup = {
   id: string;
   label: string;
   icon: "layout" | "server" | "brain" | "database" | "cloud" | "wrench" | "braces";
-  experience: string;
   description: string;
   usedIn: string;
   items: string[];
@@ -33,8 +32,7 @@ export const skillGroups: SkillGroup[] = [
     id: "programming",
     label: "Programming",
     icon: "braces",
-    experience: "Strong",
-    description: "Core languages that underpin everything I build — from algorithms to APIs.",
+    description: "Core languages used across my projects, coursework, and competitive programming practice.",
     usedIn: "All projects · HackerRank · NxtWave",
     items: ["Python", "JavaScript", "TypeScript", "C", "SQL"],
   },
@@ -42,26 +40,23 @@ export const skillGroups: SkillGroup[] = [
     id: "frontend",
     label: "Frontend",
     icon: "layout",
-    experience: "Advanced",
-    description: "Pixel-faithful interfaces, motion and design systems that feel deliberate.",
+    description: "Responsive, accessible interfaces built with React and modern styling frameworks.",
     usedIn: "RightLaw · CivicMind · This site",
-    items: ["HTML5", "CSS3", "React", "Next.js", "Tailwind CSS", "Bootstrap", "Framer Motion"],
+    items: ["HTML5", "CSS3", "React", "Next.js", "Tailwind CSS", "Bootstrap"],
   },
   {
     id: "backend",
     label: "Backend",
     icon: "server",
-    experience: "Growing",
-    description: "Well-shaped REST APIs, auth, and server logic behind the products I ship.",
+    description: "REST APIs, server logic, and authentication behind the applications I build.",
     usedIn: "CivicMind · ShelfWise AI · API-driven features",
     items: ["Node.js", "Express.js", "FastAPI", "Flask", "REST APIs"],
   },
   {
     id: "aiml",
-    label: "AI / ML",
+    label: "AI & Machine Learning",
     icon: "brain",
-    experience: "Hands-on",
-    description: "Retrieval, agents and computer vision that turn unstructured content into insight.",
+    description: "Generative AI, retrieval pipelines, and computer vision applied to real-world problems.",
     usedIn: "RightLaw · ShelfWise AI",
     items: ["Generative AI", "RAG", "OpenCV", "TensorFlow", "PyTorch", "OCR", "Gemini API", "OpenAI API"],
   },
@@ -69,19 +64,17 @@ export const skillGroups: SkillGroup[] = [
     id: "database",
     label: "Databases",
     icon: "database",
-    experience: "Working",
-    description: "Schemas and queries that scale cleanly with the product.",
+    description: "Relational and NoSQL databases used for storing and querying application data.",
     usedIn: "RightLaw · CivicMind · ShelfWise AI",
     items: ["MySQL", "MongoDB", "PostgreSQL", "Supabase"],
   },
   {
     id: "tools",
-    label: "Tools & Platforms",
+    label: "Tools",
     icon: "wrench",
-    experience: "Daily driver",
-    description: "The everyday kit that keeps the workflow tight and deployments clean.",
+    description: "Version control and deployment tools used across every project.",
     usedIn: "Sprint Field Magic · All projects",
-    items: ["Git", "GitHub", "VS Code", "REST APIs", "Vercel", "Netlify"],
+    items: ["Git", "GitHub", "VS Code", "Vercel", "Netlify"],
   },
 ];
 
@@ -137,19 +130,19 @@ export const projects: Project[] = [
     id: "shelfwise",
     slug: "shelfwise-ai",
     name: "ShelfWise AI",
-    category: "AI + Computer Vision",
+    category: "AI & Computer Vision",
     tags: ["AI", "Machine Learning", "Computer Vision", "Full Stack"],
     year: "2025",
     tagline:
-      "An AI-powered inventory intelligence platform that automates retail shelf monitoring and stock management.",
+      "AI-powered inventory monitoring system designed to detect shelf issues and support inventory management.",
     overview:
-      "Developed an intelligent inventory management platform that combines AI and computer vision to monitor shelves, detect stock shortages, and optimize product placement.",
+      "AI-powered inventory monitoring system designed to detect shelf issues and support inventory management.",
     problem:
-      "Manual shelf audits are slow, error-prone, and expensive. Empty shelves go unnoticed, stockouts damage sales, and product placement is never backed by data.",
+      "Manual shelf checks are slow and inconsistent. Stock issues are often noticed late, and there is no reliable record of shelf conditions over time.",
     solution:
-      "A computer-vision pipeline that watches shelf conditions continuously, flags low-stock in real time, and surfaces placement insights through a single analytics dashboard.",
+      "A computer-vision pipeline that analyses shelf images, flags stock issues, and presents the results in a simple dashboard for inventory management.",
     research: [
-      "Profiled retail stock-check workflows to quantify how much time manual audits consume.",
+      "Profiled retail stock-check workflows to see where manual audits lose time.",
       "Tested OpenCV detections against real shelf photos with varied lighting and occlusion.",
       "Compared TensorFlow vs PyTorch for a lightweight, deployable detection loop.",
     ],
@@ -163,21 +156,21 @@ export const projects: Project[] = [
       "Computer vision monitoring",
       "Low-stock alerts",
       "Inventory analytics dashboard",
-      "Product placement optimization",
+      "Stock level tracking",
     ],
-    tech: ["Python", "TensorFlow", "PyTorch", "OpenCV", "FastAPI", "Flask", "React"],
+    tech: ["Python", "OpenCV", "TensorFlow", "PyTorch", "FastAPI", "React"],
     architecture: [
       "Python vision layer (OpenCV + TensorFlow/PyTorch) for shelf frame analysis.",
-      "FastAPI/Flask services exposed over a clean API to the React dashboard.",
+      "FastAPI services exposed over a clean API to the React dashboard.",
       "Alerting and analytics layered on top of structured detections.",
     ],
     systemFlow: [
       "A camera or upload feeds frames into the vision pipeline.",
       "Detection yields per-product stock levels that are stored and timestamped.",
-      "Low-stock detections trigger alerts; trends feed the placement dashboard.",
+      "Low-stock detections trigger alerts; trends feed the analytics dashboard.",
     ],
     dbDesign: [
-      "products, stock_events, alerts, placements — with product_id references and timestamps.",
+      "products, stock_events, alerts — with product_id references and timestamps.",
       "Analytics derived from the append-only stock_events table.",
     ],
     process: [
@@ -196,22 +189,14 @@ export const projects: Project[] = [
     ],
     video: "",
     impact:
-      "Reduced manual inventory auditing and improved stock visibility through intelligent automation.",
+      "Detects shelf issues automatically and presents stock information in one place for easier inventory management.",
     impactPoints: [
-      "Continuous shelf monitoring removes routine manual walkthroughs.",
-      "Low-stock alerts catch shortages before they reach the customer.",
-      "Placement analytics turn gut-feel shelving into data-driven choices.",
+      "Shelf images are analysed automatically instead of by manual inspection.",
+      "Low-stock alerts flag issues as soon as they appear.",
+      "A single dashboard keeps stock levels and shelf status visible.",
     ],
-    metrics: [
-      { value: "80%", label: "faster stock auditing" },
-      { value: "24/7", label: "shelf monitoring" },
-      { value: "1", label: "unified analytics view" },
-    ],
-    statuses: [
-      { label: "AI Powered", tone: "violet" },
-      { label: "Completed", tone: "emerald" },
-      { label: "Responsive", tone: "blue" },
-    ],
+    metrics: [],
+    statuses: [],
     demo: "https://shelf-wise-ai.vercel.app",
     github: "",
     accentFrom: "#8b5cf6",
@@ -224,17 +209,17 @@ export const projects: Project[] = [
     id: "rightlaw",
     slug: "rightlaw",
     name: "RightLaw",
-    category: "LegalTech",
+    category: "Generative AI & LegalTech",
     tags: ["AI", "Machine Learning", "Full Stack", "Open Source"],
     year: "2025 – 2026",
     tagline:
-      "An AI-powered legal document intelligence platform that simplifies legal research and document analysis.",
+      "AI-powered legal document analysis platform featuring OCR, document summaries, and source-referenced insights.",
     overview:
-      "Developed a legal technology platform that helps users understand legal documents using AI-generated summaries, structured analysis, and intelligent document search.",
+      "AI-powered legal document analysis platform featuring OCR, document summaries, and source-referenced insights.",
     problem:
-      "Lawyers and students spend hours scanning dense judgments for the sections, precedents, and arguments that matter. Key insight stays buried in unstructured legal prose.",
+      "Legal documents are long and dense. Finding the relevant sections, summaries, and references manually takes a lot of time.",
     solution:
-      "RightLaw turns uploaded documents into structured intelligence — IRAC summaries, clause extraction, OCR, and source-referenced search — so complex text becomes readable insight.",
+      "RightLaw processes uploaded documents with OCR, generates structured summaries, and returns answers that point back to their source in the original document.",
     research: [
       "Spent time with legal workflows: judgments are long, precedents matter, citations are everything.",
       "Benchmarked summarization vs extraction approaches on real case documents.",
@@ -260,14 +245,13 @@ export const projects: Project[] = [
       "Supabase",
       "PostgreSQL",
       "Gemini API",
-      "OpenAI API",
       "Tesseract OCR",
-      "Chroma Vector Database",
+      "Chroma",
     ],
     architecture: [
       "Next.js app shell with Supabase (PostgreSQL) for accounts and doc records.",
       "OCR (Tesseract) normalizes scans before they enter the retrieval pipeline.",
-      "Gemini/OpenAI drive IRAC summaries and clause extraction with source references.",
+      "Gemini API drives document summaries and clause extraction with source references.",
       "Chroma vector store powers semantic search and filtering over document chunks.",
     ],
     systemFlow: [
@@ -297,23 +281,14 @@ export const projects: Project[] = [
     ],
     video: "",
     impact:
-      "Made legal documents easier to understand for lawyers, students, and everyday users by transforming complex legal text into structured insights.",
+      "Makes legal documents easier to understand by converting them into summaries and source-referenced insights.",
     impactPoints: [
-      "IRAC summaries compress hours of reading into structured, readable insight.",
-      "Source-referenced citations keep AI reasoning auditable and trustworthy.",
-      "One-click OCR + analysis opens up scanned and printed case files.",
+      "Document summaries shorten long judgments into readable points.",
+      "Every insight points back to its source in the original document.",
+      "OCR support handles scanned and printed case files.",
     ],
-    metrics: [
-      { value: "1-click", label: "OCR + analysis workflow" },
-      { value: "AI", label: "structured legal insights" },
-      { value: "100%", label: "source-referenced citations" },
-    ],
-    statuses: [
-      { label: "AI Powered", tone: "violet" },
-      { label: "Open Source", tone: "amber" },
-      { label: "Completed", tone: "emerald" },
-      { label: "Responsive", tone: "blue" },
-    ],
+    metrics: [],
+    statuses: [{ label: "Open Source", tone: "amber" }],
     demo: "",
     github: "https://github.com/DurgaPrasadU616",
     accentFrom: "#3b62e6",
@@ -330,22 +305,22 @@ export const projects: Project[] = [
     tags: ["Full Stack", "Web App", "Hackathon"],
     year: "2025",
     tagline:
-      "A civic engagement platform connecting citizens with local governments through transparent issue reporting and tracking.",
+      "Civic issue reporting platform that helps users submit, track, and discuss local problems.",
     overview:
-      "Built a digital civic platform where citizens can report public issues, monitor resolution progress, and engage with local governance.",
+      "Civic issue reporting platform that helps users submit, track, and discuss local problems.",
     problem:
-      "Public issues get lost between phone calls, forms, and social media. Citizens never know who is acting on their report, and authorities lack a structured intake pipeline.",
+      "Local issues are usually reported through calls, forms, or social media, where they get lost. Citizens have no way to check the status of a report.",
     solution:
-      "A transparent reporting loop — citizens file an issue with media and location, the platform tracks status live, and the community votes and comments to keep momentum visible.",
+      "A simple reporting loop — users file an issue with media and location, and the platform tracks its status so progress stays visible.",
     research: [
-      "Interviewed both sides — citizens and local authorities — to see how reports actually flow.",
-      "Mapped the current tools: calls, forms, and social posts that each lose context.",
-      "Derived a state model every issue should traverse, from filed to resolved.",
+      "Mapped how reports currently flow through calls, forms, and social posts, and where context is lost.",
+      "Defined a state model every issue should move through, from filed to resolved.",
+      "Listed the fields authorities need to act on a report.",
     ],
     challenges: [
-      "Designing an intake model authorities can actually act on, not just admire.",
+      "Designing an intake model that authorities can act on.",
       "Keeping location and media uploads reliable on slow mobile connections.",
-      "Building trust through honest, always-visible status transitions.",
+      "Keeping status transitions visible and consistent.",
     ],
     features: [
       "Issue reporting",
@@ -355,9 +330,9 @@ export const projects: Project[] = [
       "Community voting",
       "Public comments",
     ],
-    tech: ["React", "Node.js", "Express", "MongoDB", "PostgreSQL", "Maps API"],
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "Maps API"],
     architecture: [
-      "Node.js + Express API with MongoDB for issue threads and PostgreSQL for structured civic records.",
+      "Node.js + Express API with MongoDB for issue threads and reports.",
       "Maps API powers location tagging and proximity views.",
       "Status machine models every state an issue can move through.",
     ],
@@ -371,13 +346,13 @@ export const projects: Project[] = [
       "Auditable status transitions recorded in status_history.",
     ],
     process: [
-      "Interviewed the flow from both sides — citizen and authority — before building.",
+      "Mapped the reporting flow before building the interface.",
       "Started with a text-only report, added media and maps after the loop worked.",
-      "Let the status model be the source of truth for the whole UI.",
+      "Let the status model be the source of truth for the UI.",
     ],
     lessons: [
-      "Trust is a feature: every status change must be visible and explainable.",
-      "Designing the data model first kept the two-sided flow honest.",
+      "Every status change needs to be visible and explainable.",
+      "Designing the data model first kept the two-sided flow consistent.",
     ],
     future: [
       "Authority dashboards with SLAs per issue category.",
@@ -386,21 +361,14 @@ export const projects: Project[] = [
     ],
     video: "",
     impact:
-      "Improved communication between citizens and local authorities while increasing transparency in issue resolution.",
+      "Gives users one place to submit local problems and track how they are being resolved.",
     impactPoints: [
-      "Every issue carries a visible, honest status from report to resolution.",
-      "Community voting keeps high-impact problems near the top of the queue.",
-      "Structured intake gives authorities data they can route and respond to.",
+      "Every issue carries a visible status from report to resolution.",
+      "Community voting lets residents highlight important issues.",
+      "Structured intake gives maintainers data they can route and respond to.",
     ],
-    metrics: [
-      { value: "Live", label: "status on every issue" },
-      { value: "100%", label: "issues documented" },
-      { value: "2-way", label: "citizen–authority loop" },
-    ],
-    statuses: [
-      { label: "Completed", tone: "emerald" },
-      { label: "Responsive", tone: "blue" },
-    ],
+    metrics: [],
+    statuses: [],
     demo: "https://aicivilmind.vercel.app/",
     github: "",
     accentFrom: "#0ea5e9",
@@ -417,16 +385,16 @@ export const projects: Project[] = [
     tags: ["Full Stack", "Web App", "Hackathon"],
     year: "2025",
     tagline:
-      "A high-efficiency agile project management platform that streamlines sprint planning, task tracking, and real-time team collaboration.",
+      "Agile project management application for organizing tasks and tracking team progress.",
     overview:
-      "Built an intuitive project management application that helps teams organize tasks, manage sprint workflows, and monitor progress through a clean, responsive interface.",
+      "Agile project management application for organizing tasks and tracking team progress.",
     problem:
-      "Agile teams drown in fragmented tools — sticky notes, spreadsheets, and chat threads. Sprint planning becomes admin work instead of execution, and progress is invisible until stand-up.",
+      "Small teams often track work across sticky notes, spreadsheets, and chat threads. Planning becomes administrative work, and progress is hard to see.",
     solution:
-      "A distraction-free workspace that centralizes sprint planning, Kanban flow, and real-time activity into one calm surface — so teams can plan, ship, and stay aligned without tool hopping.",
+      "A single workspace for sprint planning, a Kanban board, and activity tracking — so teams can plan tasks and follow progress without switching tools.",
     research: [
-      "Studied how agile teams fragment across sticky notes, sheets, and chat before planning a feature.",
-      "Interviewed small-team habits to pin the sharpest annoyances: lost context and invisible progress.",
+      "Listed how work is typically split across sticky notes, sheets, and chat before planning features.",
+      "Noted the common annoyances for small teams: lost context and unclear progress.",
       "Scoped a single 'plan → execute → review' surface instead of ten overlapping tools.",
     ],
     challenges: [
@@ -442,7 +410,7 @@ export const projects: Project[] = [
       "Team collaboration",
       "Mobile responsive UI",
     ],
-    tech: ["React", "JavaScript", "HTML5", "CSS3", "REST API"],
+    tech: ["React", "JavaScript", "HTML", "CSS", "REST APIs"],
     architecture: [
       "Component-driven React UI with a strict state boundary between board and task layer.",
       "REST API for tasks, sprints, and activity — kept deliberately thin.",
@@ -458,36 +426,29 @@ export const projects: Project[] = [
       "Activity feed stored append-only so history is never rewritten.",
     ],
     process: [
-      "Mapped sprint flow from planning to retrospective before writing a line of UI.",
+      "Mapped the sprint flow from planning to retrospective before writing UI code.",
       "Iterated the board interaction on real task data instead of lorem ipsum.",
       "Shipped the responsive pass last so mobile never compromised desktop depth.",
     ],
     lessons: [
-      "Optimistic UI is only calm if the rollback story is airtight.",
-      "A narrow, well-typed state boundary makes drag-and-drop boring — in a good way.",
+      "Optimistic UI needs a reliable rollback path.",
+      "A narrow, well-typed state boundary keeps drag-and-drop predictable.",
     ],
     future: [
       "Sprint analytics and burndown charts.",
       "Real-time presence so the whole team sees edits as they happen.",
-      "Slack-style comments threaded into tasks.",
+      "Comments threaded into tasks.",
     ],
     video: "",
     impact:
-      "Reduced project tracking complexity by providing a distraction-free interface for agile teams.",
+      "Keeps sprint planning, task tracking, and team progress in a single, easy-to-use interface.",
     impactPoints: [
       "One surface for planning, executing, and reviewing sprints.",
-      "Live activity keeps the whole team oriented without meetings.",
-      "Responsive by default — dashboards work in the palm of a hand.",
+      "Every task move is added to an activity feed.",
+      "Works on desktop and mobile browsers.",
     ],
-    metrics: [
-      { value: "40%", label: "less tracking overhead" },
-      { value: "1×", label: "unified sprint workspace" },
-      { value: "100%", label: "responsive across devices" },
-    ],
-    statuses: [
-      { label: "Completed", tone: "emerald" },
-      { label: "Responsive", tone: "blue" },
-    ],
+    metrics: [],
+    statuses: [],
     demo: "https://sprint-field-magic.lovable.app/",
     github: "",
     accentFrom: "#4f7cff",
@@ -514,13 +475,13 @@ export const achievements: Achievement[] = [
   },
   {
     title: "Top 15 — RoboMela Hackathon",
-    detail: "Secured a Top 15 finish at the RoboMela Hackathon for rapid prototyping under pressure.",
+    detail: "Secured a Top 15 finish at the RoboMela Hackathon.",
     meta: "Hackathon",
     icon: "award",
   },
   {
     title: "300+ coding problems solved",
-    detail: "Solved 300+ coding problems in Python and C across arrays, dynamic programming, graphs, and trees.",
+    detail: "Solved 300+ coding problems using Python and C.",
     meta: "Competitive Programming",
     icon: "code",
   },
@@ -535,8 +496,8 @@ export type Stat = {
 };
 
 export const stats: Stat[] = [
-  { value: 4, suffix: "+", label: "Products shipped", detail: "End-to-end builds, from idea to deploy." },
-  { value: 300, suffix: "+", label: "Problems solved", detail: "Across Python & C on competitive platforms." },
-  { value: 8.2, decimals: 1, label: "CGPA", detail: "B.Tech Computer Science & Engineering." },
-  { value: 2, suffix: "×", label: "Hackathon placements", detail: "Top 5 Idea to Impact · Top 15 RoboMela." },
+  { value: 4, suffix: "+", label: "Featured Projects", detail: "ShelfWise AI, RightLaw, CivicMind, Sprint Field Magic." },
+  { value: 300, suffix: "+", label: "Coding Problems Solved", detail: "In Python and C across competitive platforms." },
+  { value: 8.2, decimals: 1, label: "CGPA", detail: "B.Tech Computer Science & Engineering, 2023–2027." },
+  { value: 2, label: "Hackathon Placements", detail: "Top 5 Idea to Impact · Top 15 RoboMela." },
 ];

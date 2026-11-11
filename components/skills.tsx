@@ -22,7 +22,7 @@ export function Skills() {
     <Section id="skills">
       <SectionHeading
         eyebrow="Technology"
-        title="A focused toolkit — chosen to ship real products"
+        title="A focused toolkit for building products"
         align="center"
       />
       <StaggerList className="divided-panel">
@@ -37,10 +37,6 @@ export function Skills() {
                   </span>
                   <div className="min-w-0">
                     <h3 className="font-bold tracking-tight">{group.label}</h3>
-                    <span className="mt-1.5 inline-flex items-center gap-1.5 text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-ink-soft/70">
-                      <span className="size-1.5 rounded-full bg-brand" />
-                      {group.experience}
-                    </span>
                   </div>
                 </div>
 

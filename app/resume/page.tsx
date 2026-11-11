@@ -6,7 +6,7 @@ import { PrintButton } from "@/components/print-button";
 
 export const metadata: Metadata = {
   title: "Resume — Ungarala Durga Prasad",
-  description: `${Info.name} — B.Tech CSE student, Frontend & Full Stack Developer, and Generative AI enthusiast resume.`,
+  description: `${Info.name} — ${Info.role}. B.Tech CSE student resume.`,
 };
 
 export default function ResumePage() {
@@ -31,7 +31,7 @@ export default function ResumePage() {
             <div>
               <h1 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">{Info.name}</h1>
               <p className="mt-1.5 text-base font-semibold text-brand">
-                Computer Science Student · Frontend, Full Stack &amp; Generative AI
+                Frontend Developer · Full Stack Developer · Generative AI Enthusiast
               </p>
               <p className="mt-1 text-sm text-ink-soft">
                 B.Tech CSE (2023–2027) · ANU College of Engineering &amp; Technology · CGPA: 8.2 / 10
@@ -85,11 +85,10 @@ export default function ResumePage() {
               Professional Summary
             </h2>
             <p className="mt-3 leading-relaxed text-ink-soft text-sm">
-              B.Tech Computer Science &amp; Engineering student (2023–2027) passionate about building responsive,
-              thoughtful web applications and AI-powered solutions. Strong foundation in Data Structures &amp;
-              Algorithms with 300+ problems solved in Python and C. Hands-on experience in computer vision, RAG
-              pipelines, RESTful backend systems, and modern React/Next.js interfaces. Seeking frontend, full stack,
-              and Generative AI internship opportunities.
+              Computer Science Engineering student (B.Tech 2023–2027, ANU College of Engineering
+              &amp; Technology) passionate about building responsive web applications and AI-powered
+              solutions that solve real-world problems. Solved 300+ coding problems in Python and C.
+              Open to internship opportunities.
             </p>
           </section>
 
@@ -107,10 +106,6 @@ export default function ResumePage() {
                   <span className="text-xs font-semibold text-brand">2023 – 2027 · CGPA: 8.2 / 10</span>
                 </div>
                 <p className="text-xs font-medium text-ink-soft">ANU College of Engineering &amp; Technology</p>
-                <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-                  Core Coursework: Data Structures &amp; Algorithms, Database Management Systems, Operating Systems,
-                  Computer Networks, Software Engineering.
-                </p>
               </div>
 
               <div>
@@ -122,8 +117,7 @@ export default function ResumePage() {
                 </div>
                 <p className="text-xs font-medium text-ink-soft">NxtWave CCBP 4.0 Academy</p>
                 <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-                  Hands-on training spanning modern frontend engineering (React, Next.js), backend services
-                  (Node.js, Express), database modeling (SQL, MongoDB), and scalable application architecture.
+                  Full Stack Development training.
                 </p>
               </div>
             </div>
@@ -138,63 +132,60 @@ export default function ResumePage() {
               <div>
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h3 className="font-bold text-ink text-sm sm:text-base">
-                    ShelfWise AI — Retail Shelf Monitoring &amp; Stock Intelligence
+                    ShelfWise AI — AI &amp; Computer Vision
                   </h3>
                   <span className="text-xs font-semibold text-ink-soft">2025 · Live Demo</span>
                 </div>
                 <p className="text-xs text-brand font-medium">
-                  Python, TensorFlow, PyTorch, OpenCV, FastAPI, Flask, React
+                  Python, OpenCV, TensorFlow, PyTorch, FastAPI, React
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-                  Engineered an AI-powered computer-vision inventory intelligence platform that watches retail shelf
-                  conditions, detects stock shortages, and surfaces placement insights through a real-time dashboard.
-                  Eliminates routine manual auditing with automated vision detections.
+                  AI-powered inventory monitoring system designed to detect shelf issues and support
+                  inventory management.
                 </p>
               </div>
 
               <div>
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h3 className="font-bold text-ink text-sm sm:text-base">
-                    RightLaw — AI Legal Document Intelligence Platform
+                    RightLaw — Generative AI &amp; LegalTech
                   </h3>
                   <span className="text-xs font-semibold text-ink-soft">2025–2026 · Open Source</span>
                 </div>
                 <p className="text-xs text-brand font-medium">
-                  Next.js, React, Tailwind CSS, Supabase, PostgreSQL, Gemini API, OpenAI API, OCR, Chroma
+                  Next.js, React, Tailwind CSS, Gemini API, Supabase, PostgreSQL, Tesseract OCR, Chroma
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-                  Developed an intelligent legal research platform that transforms dense case judgments into structured
-                  IRAC summaries, clause extractions, and semantic search with strict 100% source-referenced citations.
-                  Integrated OCR preprocessing for scanned court documents.
-                </p>
-              </div>
-
-              <div>
-                <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 className="font-bold text-ink text-sm sm:text-base">
-                    CivicMind — Transparent Civic Issue Reporting Platform
-                  </h3>
-                  <span className="text-xs font-semibold text-ink-soft">2025 · Live Demo</span>
-                </div>
-                <p className="text-xs text-brand font-medium">React, Node.js, Express, MongoDB, PostgreSQL, Maps API</p>
-                <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-                  Built a civic engagement platform connecting citizens with municipal authorities through a transparent
-                  intake and issue tracking loop. Includes geotagging, media uploads, community voting, and an auditable
-                  status state-machine.
+                  AI-powered legal document analysis platform featuring OCR, document summaries, and
+                  source-referenced insights.
                 </p>
               </div>
 
               <div>
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h3 className="font-bold text-ink text-sm sm:text-base">
-                    Sprint Field Magic — Agile Project Management Workspace
+                    CivicMind — Smart Governance
                   </h3>
                   <span className="text-xs font-semibold text-ink-soft">2025 · Live Demo</span>
                 </div>
-                <p className="text-xs text-brand font-medium">React, JavaScript, HTML5, CSS3, REST APIs</p>
+                <p className="text-xs text-brand font-medium">React, Node.js, Express.js, MongoDB, Maps API</p>
                 <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-                  Designed a distraction-free agile sprint management platform with interactive drag-and-drop Kanban
-                  boards, optimistic UI updates, custom workflow transitions, and real-time team progress rollups.
+                  Civic issue reporting platform that helps users submit, track, and discuss local
+                  problems.
+                </p>
+              </div>
+
+              <div>
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h3 className="font-bold text-ink text-sm sm:text-base">
+                    Sprint Field Magic — Project Management
+                  </h3>
+                  <span className="text-xs font-semibold text-ink-soft">2025 · Live Demo</span>
+                </div>
+                <p className="text-xs text-brand font-medium">React, JavaScript, HTML, CSS, REST APIs</p>
+                <p className="mt-1 text-xs leading-relaxed text-ink-soft">
+                  Agile project management application for organizing tasks and tracking team
+                  progress.
                 </p>
               </div>
             </div>
@@ -210,21 +201,20 @@ export default function ResumePage() {
                 <strong className="text-ink">Programming:</strong> Python, JavaScript, TypeScript, C, SQL
               </div>
               <div>
-                <strong className="text-ink">Frontend:</strong> HTML5, CSS3, React, Next.js, Tailwind CSS, Bootstrap,
-                Framer Motion
+                <strong className="text-ink">Frontend:</strong> HTML5, CSS3, React, Next.js, Tailwind CSS, Bootstrap
               </div>
               <div>
                 <strong className="text-ink">Backend:</strong> Node.js, Express.js, FastAPI, Flask, REST APIs
               </div>
               <div>
-                <strong className="text-ink">AI / ML:</strong> Generative AI, RAG, OpenCV, TensorFlow, PyTorch, OCR,
-                Gemini API, OpenAI API
+                <strong className="text-ink">AI &amp; Machine Learning:</strong> Generative AI, RAG, OpenCV,
+                TensorFlow, PyTorch, OCR, Gemini API, OpenAI API
               </div>
               <div>
                 <strong className="text-ink">Databases:</strong> MySQL, MongoDB, PostgreSQL, Supabase
               </div>
               <div>
-                <strong className="text-ink">Tools &amp; Platforms:</strong> Git, GitHub, VS Code, Vercel, Netlify
+                <strong className="text-ink">Tools:</strong> Git, GitHub, VS Code, Vercel, Netlify
               </div>
             </div>
           </section>
@@ -245,15 +235,15 @@ export default function ResumePage() {
               <li className="flex items-start gap-2">
                 <span className="size-1.5 shrink-0 rounded-full bg-brand mt-1.5" />
                 <span>
-                  <strong className="text-ink">Top 15 — RoboMela Hackathon:</strong> Secured a Top 15 finish through
-                  rapid prototyping and technical problem-solving under pressure.
+                  <strong className="text-ink">Top 15 — RoboMela Hackathon:</strong> Secured a Top 15
+                  finish at the RoboMela Hackathon.
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="size-1.5 shrink-0 rounded-full bg-brand mt-1.5" />
                 <span>
-                  <strong className="text-ink">300+ coding problems solved:</strong> Consistent practice across arrays,
-                  dynamic programming, graphs, and trees in Python &amp; C.
+                  <strong className="text-ink">300+ coding problems solved:</strong> Solved 300+ coding
+                  problems using Python and C.
                 </span>
               </li>
             </ul>

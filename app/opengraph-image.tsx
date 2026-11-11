@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { Info } from "@/lib/data";
 
-export const alt = `${Info.name} — Frontend, Full Stack & AI Developer`;
+export const alt = `${Info.name} — ${Info.role}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -40,7 +40,7 @@ export default function OpenGraphImage() {
           </div>
           <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.1 }}>
             <span style={{ fontSize: 26, fontWeight: 700 }}>{Info.name}</span>
-            <span style={{ fontSize: 16, opacity: 0.72 }}>dp.dev</span>
+            <span style={{ fontSize: 16, opacity: 0.72 }}>udp.dev</span>
           </div>
         </div>
 
@@ -62,18 +62,18 @@ export default function OpenGraphImage() {
             Building meaningful digital experiences with modern web technologies and AI.
           </div>
           <div style={{ display: "flex", fontSize: 22, opacity: 0.78, lineHeight: 1.4, maxWidth: 860 }}>
-            Computer Science student passionate about building responsive web applications and AI-powered solutions.
+            {Info.intro}
           </div>
         </div>
 
         <div style={{ display: "flex", gap: 16, fontSize: 18, opacity: 0.75 }}>
-          <span>4+ products shipped</span>
+          <span>4 featured projects</span>
           <span>·</span>
-          <span>300+ DSA problems</span>
+          <span>300+ coding problems solved</span>
           <span>·</span>
           <span>8.2 CGPA</span>
           <span>·</span>
-          <span>Available for internships 2026</span>
+          <span>2 hackathon placements</span>
         </div>
       </div>
     ),

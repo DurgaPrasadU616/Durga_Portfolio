@@ -51,7 +51,7 @@ export function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex size-2 rounded-full bg-emerald-500" />
               </span>
-              Available for internships · 2026
+              Open to Internship Opportunities
             </span>
           </motion.div>
 
@@ -165,16 +165,6 @@ export function Hero() {
                 </div>
 
                 <div className="h-px bg-line" />
-
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-soft/70">
-                    Currently building
-                  </p>
-                  <p className="mt-1.5 text-sm font-medium leading-relaxed text-ink">
-                    RightLaw — AI legal research that turns dense case files into
-                    source-referenced insight.
-                  </p>
-                </div>
 
                 <div className="flex items-center gap-2 rounded-2xl bg-emerald-50 border border-emerald-100 px-4 py-3">
                   <span className="size-2 rounded-full bg-emerald-500" />
