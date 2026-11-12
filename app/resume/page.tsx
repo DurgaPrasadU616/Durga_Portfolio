@@ -6,7 +6,7 @@ import { PrintButton } from "@/components/print-button";
 
 export const metadata: Metadata = {
   title: "Resume — Ungarala Durga Prasad",
-  description: `${Info.name} — ${Info.role}. B.Tech CSE student resume.`,
+  description: "Ungarala Durga Prasad — Frontend & Full Stack Developer | Exploring Generative AI. B.Tech CSE student resume.",
 };
 
 export default function ResumePage() {
@@ -31,7 +31,7 @@ export default function ResumePage() {
             <div>
               <h1 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">{Info.name}</h1>
               <p className="mt-1.5 text-base font-semibold text-brand">
-                Frontend Developer · Full Stack Developer · Generative AI Enthusiast
+                Frontend &amp; Full Stack Developer | Exploring Generative AI
               </p>
               <p className="mt-1 text-sm text-ink-soft">
                 B.Tech CSE (2023–2027) · ANU College of Engineering &amp; Technology · CGPA: 8.2 / 10
@@ -85,10 +85,10 @@ export default function ResumePage() {
               Professional Summary
             </h2>
             <p className="mt-3 leading-relaxed text-ink-soft text-sm">
-              Computer Science Engineering student (B.Tech 2023–2027, ANU College of Engineering
-              &amp; Technology) passionate about building responsive web applications and AI-powered
-              solutions that solve real-world problems. Solved 300+ coding problems in Python and C.
-              Open to internship opportunities.
+              B.Tech Computer Science student (2023–2027, ANU College of Engineering &amp; Technology)
+              with a focus on Frontend Development and Generative AI. Built AI-powered and full-stack
+              web applications using React, Next.js, Gemini API, and RAG pipelines. Solved 300+
+              coding problems in Python and C. Open to internship opportunities.
             </p>
           </section>
 
@@ -132,22 +132,6 @@ export default function ResumePage() {
               <div>
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h3 className="font-bold text-ink text-sm sm:text-base">
-                    ShelfWise AI — AI &amp; Computer Vision
-                  </h3>
-                  <span className="text-xs font-semibold text-ink-soft">2025 · Live Demo</span>
-                </div>
-                <p className="text-xs text-brand font-medium">
-                  Python, OpenCV, TensorFlow, PyTorch, FastAPI, React
-                </p>
-                <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-                  AI-powered inventory monitoring system designed to detect shelf issues and support
-                  inventory management.
-                </p>
-              </div>
-
-              <div>
-                <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 className="font-bold text-ink text-sm sm:text-base">
                     RightLaw — Generative AI &amp; LegalTech
                   </h3>
                   <span className="text-xs font-semibold text-ink-soft">2025–2026 · Open Source</span>
@@ -158,6 +142,22 @@ export default function ResumePage() {
                 <p className="mt-1 text-xs leading-relaxed text-ink-soft">
                   AI-powered legal document analysis platform featuring OCR, document summaries, and
                   source-referenced insights.
+                </p>
+              </div>
+
+              <div>
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h3 className="font-bold text-ink text-sm sm:text-base">
+                    ShelfWise AI — AI &amp; Computer Vision
+                  </h3>
+                  <span className="text-xs font-semibold text-ink-soft">2025 · Live Demo</span>
+                </div>
+                <p className="text-xs text-brand font-medium">
+                  Python, OpenCV, TensorFlow, PyTorch, FastAPI, React
+                </p>
+                <p className="mt-1 text-xs leading-relaxed text-ink-soft">
+                  AI-powered inventory monitoring system designed to detect shelf issues and support
+                  inventory management.
                 </p>
               </div>
 

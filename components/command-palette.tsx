@@ -5,7 +5,6 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowUpRight,
-  Braces,
   Code2,
   CornerDownLeft,
   Download,
@@ -94,7 +93,6 @@ export function CommandPalette() {
       { id: "github", group: "Links", label: "GitHub", hint: "github.com/DurgaPrasadU616", icon: Github, onSelect: () => window.open(Info.socials.github, "_blank") },
       { id: "linkedin", group: "Links", label: "LinkedIn", hint: "linkedin.com/in/durga-prasad-ungarala", icon: Linkedin, onSelect: () => window.open(Info.socials.linkedin, "_blank") },
       { id: "hackerrank", group: "Links", label: "HackerRank", hint: "hackerrank.com/profile/durga_prasad_616", icon: Code2, onSelect: () => window.open(Info.socials.hackerrank, "_blank") },
-      { id: "leetcode", group: "Links", label: "LeetCode", hint: "leetcode.com", icon: Braces, onSelect: () => window.open(Info.socials.leetcode, "_blank") },
     ],
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [],

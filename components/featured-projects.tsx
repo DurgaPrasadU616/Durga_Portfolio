@@ -22,15 +22,6 @@ type FeaturedEntry = {
 
 const featured: FeaturedEntry[] = [
   {
-    slug: "shelfwise-ai",
-    category: "AI & Computer Vision",
-    description:
-      "AI-powered inventory monitoring system designed to detect shelf issues and support inventory management.",
-    tech: ["Python", "OpenCV", "TensorFlow", "PyTorch", "FastAPI", "React"],
-    image: "/projects/shelfwise-ai.jpg",
-    host: "shelf-wise-ai.vercel.app",
-  },
-  {
     slug: "rightlaw",
     category: "Generative AI & LegalTech",
     description:
@@ -46,6 +37,15 @@ const featured: FeaturedEntry[] = [
       "Chroma",
     ],
     host: "rightlaw · UI preview",
+  },
+  {
+    slug: "shelfwise-ai",
+    category: "AI & Computer Vision",
+    description:
+      "AI-powered inventory monitoring system designed to detect shelf issues and support inventory management.",
+    tech: ["Python", "OpenCV", "TensorFlow", "PyTorch", "FastAPI", "React"],
+    image: "/projects/shelfwise-ai.jpg",
+    host: "shelf-wise-ai.vercel.app",
   },
   {
     slug: "civicmind",

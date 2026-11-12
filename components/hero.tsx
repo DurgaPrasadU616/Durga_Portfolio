@@ -58,10 +58,10 @@ export function Hero() {
           {/* Headline */}
           <motion.div variants={item(reduce)} className="mt-8">
             <h1 className="text-[clamp(2rem,5.5vw,4rem)] font-bold leading-[1.1] tracking-[-0.035em]">
-              Building meaningful{" "}
-              <span className="grad-text">digital experiences</span>
+              Frontend &{" "}
+              <span className="grad-text">Full Stack Developer</span>
               <br />
-              with modern web technologies and AI.
+              Exploring Generative AI.
             </h1>
           </motion.div>
 
@@ -168,7 +168,7 @@ export function Hero() {
 
                 <div className="flex items-center gap-2 rounded-2xl bg-emerald-50 border border-emerald-100 px-4 py-3">
                   <span className="size-2 rounded-full bg-emerald-500" />
-                  <p className="text-sm font-medium text-emerald-700">Open to internship opportunities</p>
+                  <p className="text-sm font-medium text-emerald-700">Open to Internship Opportunities</p>
                 </div>
               </div>
             </div>

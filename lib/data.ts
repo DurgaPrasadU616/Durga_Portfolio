@@ -1,10 +1,10 @@
 export const Info = {
   name: "Ungarala Durga Prasad",
   firstName: "Durga Prasad",
-  role: "Frontend Developer | Full Stack Developer | Generative AI Enthusiast",
-  tagline: "Building meaningful digital experiences with modern web technologies and AI.",
+  role: "Frontend & Full Stack Developer | Exploring Generative AI",
+  tagline: "Building responsive web apps with React and Next.js, and AI-powered features with Gemini and RAG.",
   intro:
-    "I'm a Computer Science Engineering student passionate about building responsive web applications and AI-powered solutions that solve real-world problems.",
+    "I build responsive web apps with React and Next.js, and AI-powered features with Gemini and RAG.",
   email: "durgaprasadu616@gmail.com",
   phone: "+91-9908537943",
   location: "Andhra Pradesh, India",
@@ -14,7 +14,6 @@ export const Info = {
     github: "https://github.com/DurgaPrasadU616",
     linkedin: "https://linkedin.com/in/durga-prasad-ungarala-aa0609295",
     hackerrank: "https://www.hackerrank.com/profile/durga_prasad_616",
-    leetcode: "https://leetcode.com/",
   },
 } as const;
 
@@ -29,14 +28,6 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    id: "programming",
-    label: "Programming",
-    icon: "braces",
-    description: "Core languages used across my projects, coursework, and competitive programming practice.",
-    usedIn: "All projects · HackerRank · NxtWave",
-    items: ["Python", "JavaScript", "TypeScript", "C", "SQL"],
-  },
-  {
     id: "frontend",
     label: "Frontend",
     icon: "layout",
@@ -45,20 +36,28 @@ export const skillGroups: SkillGroup[] = [
     items: ["HTML5", "CSS3", "React", "Next.js", "Tailwind CSS", "Bootstrap"],
   },
   {
+    id: "aiml",
+    label: "AI & Machine Learning",
+    icon: "brain",
+    description: "Generative AI, retrieval pipelines, and computer vision applied to real-world problems.",
+    usedIn: "RightLaw · ShelfWise AI",
+    items: ["Generative AI", "RAG", "Gemini API", "OpenAI API", "OpenCV", "TensorFlow", "PyTorch", "OCR"],
+  },
+  {
+    id: "programming",
+    label: "Programming",
+    icon: "braces",
+    description: "Core languages used across my projects, coursework, and competitive programming practice.",
+    usedIn: "All projects · HackerRank · NxtWave",
+    items: ["Python", "JavaScript", "TypeScript", "C", "SQL"],
+  },
+  {
     id: "backend",
     label: "Backend",
     icon: "server",
     description: "REST APIs, server logic, and authentication behind the applications I build.",
     usedIn: "CivicMind · ShelfWise AI · API-driven features",
     items: ["Node.js", "Express.js", "FastAPI", "Flask", "REST APIs"],
-  },
-  {
-    id: "aiml",
-    label: "AI & Machine Learning",
-    icon: "brain",
-    description: "Generative AI, retrieval pipelines, and computer vision applied to real-world problems.",
-    usedIn: "RightLaw · ShelfWise AI",
-    items: ["Generative AI", "RAG", "OpenCV", "TensorFlow", "PyTorch", "OCR", "Gemini API", "OpenAI API"],
   },
   {
     id: "database",
@@ -126,6 +125,97 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    id: "rightlaw",
+    slug: "rightlaw",
+    name: "RightLaw",
+    category: "Generative AI & LegalTech",
+    tags: ["AI", "Machine Learning", "Full Stack", "Open Source"],
+    year: "2025 – 2026",
+    tagline:
+      "AI-powered legal document analysis platform featuring OCR, document summaries, and source-referenced insights.",
+    overview:
+      "AI-powered legal document analysis platform featuring OCR, document summaries, and source-referenced insights.",
+    problem:
+      "Legal documents are long and dense. Finding the relevant sections, summaries, and references manually takes a lot of time.",
+    solution:
+      "RightLaw processes uploaded documents with OCR, generates structured summaries, and returns answers that point back to their source in the original document.",
+    research: [
+      "Spent time with legal workflows: judgments are long, precedents matter, citations are everything.",
+      "Benchmarked summarization vs extraction approaches on real case documents.",
+      "Prototyped a retrieval pipeline that keeps every claim traceable to its source paragraph.",
+    ],
+    challenges: [
+      "Making LLM output trustworthy by tying every claim to a source reference.",
+      "Handling noisy scanned PDFs with reliable OCR before analysis.",
+      "Keeping retrieval fast and accurate over long legal documents.",
+    ],
+    features: [
+      "AI document analysis",
+      "OCR support",
+      "Legal clause extraction",
+      "IRAC summary",
+      "Search & filtering",
+    ],
+    tech: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL",
+      "Gemini API",
+      "Tesseract OCR",
+      "Chroma",
+    ],
+    architecture: [
+      "Next.js app shell with Supabase (PostgreSQL) for accounts and doc records.",
+      "OCR (Tesseract) normalizes scans before they enter the retrieval pipeline.",
+      "Gemini API drives document summaries and clause extraction with source references.",
+      "Chroma vector store powers semantic search and filtering over document chunks.",
+    ],
+    systemFlow: [
+      "User uploads a PDF; Tesseract extracts text when needed.",
+      "The doc is chunked and embedded into Chroma with source offsets.",
+      "LLM passes produce IRAC summaries and clause extractions, each cited to source.",
+      "Semantic search hits the vector index and returns ranked, referenced excerpts.",
+    ],
+    dbDesign: [
+      "users, documents, chunks, citations — chunks reference document + page range.",
+      "Vector embeddings in Chroma; relational metadata in PostgreSQL via Supabase.",
+    ],
+    process: [
+      "Started with the retrieval question — source-anchored answers — not the UI.",
+      "Prototyped insight generation before polishing the document upload flow.",
+      "Iterated on reference fidelity until every summary point traced to a source.",
+    ],
+    lessons: [
+      "LLM output is only as trustworthy as its grounding — citations turned summaries into answers.",
+      "OCR quality gates everything downstream; garbage in is garbage out.",
+      "A boring, well-refined pipeline beats a clever, unreliable one.",
+    ],
+    future: [
+      "Citation-aware chat dialogue over documents.",
+      "Fine-tuned legal summarization and precedent finding.",
+      "Team workspaces with role-based access.",
+    ],
+    video: "",
+    impact:
+      "Makes legal documents easier to understand by converting them into summaries and source-referenced insights.",
+    impactPoints: [
+      "Document summaries shorten long judgments into readable points.",
+      "Every insight points back to its source in the original document.",
+      "OCR support handles scanned and printed case files.",
+    ],
+    metrics: [],
+    statuses: [{ label: "Open Source", tone: "amber" }],
+    demo: "",
+    github: "",
+    accentFrom: "#3b62e6",
+    accentTo: "#7aa6ff",
+    accentSoft: "#eef3ff",
+    icon: "law",
+    layout: "split-flip",
+  },
   {
     id: "shelfwise",
     slug: "shelfwise-ai",
@@ -204,98 +294,6 @@ export const projects: Project[] = [
     accentSoft: "#f3eaff",
     icon: "vision",
     layout: "split",
-  },
-  {
-    id: "rightlaw",
-    slug: "rightlaw",
-    name: "RightLaw",
-    category: "Generative AI & LegalTech",
-    tags: ["AI", "Machine Learning", "Full Stack", "Open Source"],
-    year: "2025 – 2026",
-    tagline:
-      "AI-powered legal document analysis platform featuring OCR, document summaries, and source-referenced insights.",
-    overview:
-      "AI-powered legal document analysis platform featuring OCR, document summaries, and source-referenced insights.",
-    problem:
-      "Legal documents are long and dense. Finding the relevant sections, summaries, and references manually takes a lot of time.",
-    solution:
-      "RightLaw processes uploaded documents with OCR, generates structured summaries, and returns answers that point back to their source in the original document.",
-    research: [
-      "Spent time with legal workflows: judgments are long, precedents matter, citations are everything.",
-      "Benchmarked summarization vs extraction approaches on real case documents.",
-      "Prototyped a retrieval pipeline that keeps every claim traceable to its source paragraph.",
-    ],
-    challenges: [
-      "Making LLM output trustworthy by tying every claim to a source reference.",
-      "Handling noisy scanned PDFs with reliable OCR before analysis.",
-      "Keeping retrieval fast and accurate over long legal documents.",
-    ],
-    features: [
-      "AI document analysis",
-      "OCR support",
-      "Legal clause extraction",
-      "IRAC summary",
-      "Search & filtering",
-      "Responsive UI",
-    ],
-    tech: [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "Supabase",
-      "PostgreSQL",
-      "Gemini API",
-      "Tesseract OCR",
-      "Chroma",
-    ],
-    architecture: [
-      "Next.js app shell with Supabase (PostgreSQL) for accounts and doc records.",
-      "OCR (Tesseract) normalizes scans before they enter the retrieval pipeline.",
-      "Gemini API drives document summaries and clause extraction with source references.",
-      "Chroma vector store powers semantic search and filtering over document chunks.",
-    ],
-    systemFlow: [
-      "User uploads a PDF; Tesseract extracts text when needed.",
-      "The doc is chunked and embedded into Chroma with source offsets.",
-      "LLM passes produce IRAC summaries and clause extractions, each cited to source.",
-      "Semantic search hits the vector index and returns ranked, referenced excerpts.",
-    ],
-    dbDesign: [
-      "users, documents, chunks, citations — chunks reference document + page range.",
-      "Vector embeddings in Chroma; relational metadata in PostgreSQL via Supabase.",
-    ],
-    process: [
-      "Started with the retrieval question — source-anchored answers — not the UI.",
-      "Prototyped insight generation before polishing the document upload flow.",
-      "Iterated on reference fidelity until every summary point traced to a source.",
-    ],
-    lessons: [
-      "LLM output is only as trustworthy as its grounding — citations turned summaries into answers.",
-      "OCR quality gates everything downstream; garbage in is garbage out.",
-      "A boring, well-refined pipeline beats a clever, unreliable one.",
-    ],
-    future: [
-      "Citation-aware chat dialogue over documents.",
-      "Fine-tuned legal summarization and precedent finding.",
-      "Team workspaces with role-based access.",
-    ],
-    video: "",
-    impact:
-      "Makes legal documents easier to understand by converting them into summaries and source-referenced insights.",
-    impactPoints: [
-      "Document summaries shorten long judgments into readable points.",
-      "Every insight points back to its source in the original document.",
-      "OCR support handles scanned and printed case files.",
-    ],
-    metrics: [],
-    statuses: [{ label: "Open Source", tone: "amber" }],
-    demo: "",
-    github: "https://github.com/DurgaPrasadU616",
-    accentFrom: "#3b62e6",
-    accentTo: "#7aa6ff",
-    accentSoft: "#eef3ff",
-    icon: "law",
-    layout: "split-flip",
   },
   {
     id: "civic",
@@ -496,8 +494,8 @@ export type Stat = {
 };
 
 export const stats: Stat[] = [
-  { value: 4, suffix: "+", label: "Featured Projects", detail: "ShelfWise AI, RightLaw, CivicMind, Sprint Field Magic." },
-  { value: 300, suffix: "+", label: "Coding Problems Solved", detail: "In Python and C across competitive platforms." },
   { value: 8.2, decimals: 1, label: "CGPA", detail: "B.Tech Computer Science & Engineering, 2023–2027." },
+  { value: 300, suffix: "+", label: "Problems Solved", detail: "In Python and C across competitive platforms." },
   { value: 2, label: "Hackathon Placements", detail: "Top 5 Idea to Impact · Top 15 RoboMela." },
+  { value: 4, label: "Featured Projects", detail: "RightLaw, ShelfWise AI, CivicMind, Sprint Field Magic." },
 ];

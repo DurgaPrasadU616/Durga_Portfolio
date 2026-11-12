@@ -38,9 +38,9 @@ export function About() {
             <FadeUp delay={0.05}>
               <p className="text-lg leading-relaxed text-ink-soft">
                 B.Tech Computer Science student at ANU College of Engineering &amp; Technology. I
-                enjoy building user-friendly web applications and exploring Generative AI. Through
-                academic projects, hackathons and hands-on development, I keep improving my
-                problem-solving and software development skills.
+                enjoy building user-friendly interfaces and exploring Generative AI, especially RAG
+                and document intelligence. Through academic projects and hackathons, I keep improving
+                my problem-solving and software development skills.
               </p>
             </FadeUp>
           </div>
