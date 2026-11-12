@@ -22,9 +22,9 @@ function item(reduce: boolean | null = false) {
 }
 
 const roles = [
-  "Frontend Developer",
-  "Full Stack Developer",
-  "Generative AI Enthusiast",
+  "Web Applications",
+  "AI & RAG Integrations",
+  "Interactive Interfaces",
 ];
 
 export function Hero() {

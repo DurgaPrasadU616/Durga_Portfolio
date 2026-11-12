@@ -10,7 +10,6 @@ import {
   Lightbulb,
   Rocket,
   Server,
-  Sparkles,
   Target,
   Workflow,
   Zap,
@@ -53,9 +52,6 @@ export function FeaturedProject() {
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-soft px-3 py-1 text-[0.72rem] font-semibold text-brand">
                     <ScaleIcon /> {p.category}
-                  </span>
-                  <span className="inline-flex items-center gap-1.5 rounded-full border border-line px-3 py-1 text-[0.72rem] font-medium text-ink-soft">
-                    <Sparkles className="size-3.5" /> AI Powered
                   </span>
                 </div>
 

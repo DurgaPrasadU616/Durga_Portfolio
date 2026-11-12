@@ -198,17 +198,17 @@ export default function ResumePage() {
             </h2>
             <div className="mt-3 grid gap-2 text-xs leading-relaxed text-ink-soft sm:grid-cols-2">
               <div>
-                <strong className="text-ink">Programming:</strong> Python, JavaScript, TypeScript, C, SQL
-              </div>
-              <div>
                 <strong className="text-ink">Frontend:</strong> HTML5, CSS3, React, Next.js, Tailwind CSS, Bootstrap
               </div>
               <div>
-                <strong className="text-ink">Backend:</strong> Node.js, Express.js, FastAPI, Flask, REST APIs
+                <strong className="text-ink">AI &amp; Machine Learning:</strong> Generative AI, RAG, Gemini API,
+                OpenAI API, OpenCV, TensorFlow, PyTorch, OCR
               </div>
               <div>
-                <strong className="text-ink">AI &amp; Machine Learning:</strong> Generative AI, RAG, OpenCV,
-                TensorFlow, PyTorch, OCR, Gemini API, OpenAI API
+                <strong className="text-ink">Programming:</strong> Python, JavaScript, TypeScript, C, SQL
+              </div>
+              <div>
+                <strong className="text-ink">Backend:</strong> Node.js, Express.js, FastAPI, Flask, REST APIs
               </div>
               <div>
                 <strong className="text-ink">Databases:</strong> MySQL, MongoDB, PostgreSQL, Supabase
