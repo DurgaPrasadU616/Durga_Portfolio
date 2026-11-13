@@ -40,10 +40,10 @@ const featured: FeaturedEntry[] = [
   },
   {
     slug: "shelfwise-ai",
-    category: "AI & Computer Vision",
+    category: "AI & Retail Tech",
     description:
-      "AI-powered inventory monitoring system designed to detect shelf issues and support inventory management.",
-    tech: ["Python", "OpenCV", "TensorFlow", "PyTorch", "FastAPI", "React"],
+      "Smart inventory and expiry-loss prediction platform that tracks stock, predicts expiry risk, and supports purchase decisions with Gemini-powered recommendations and an OCR invoice pipeline.",
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "Gemini API", "OCR"],
     image: "/projects/shelfwise-ai.jpg",
     host: "shelf-wise-ai.vercel.app",
   },
@@ -51,16 +51,16 @@ const featured: FeaturedEntry[] = [
     slug: "civicmind",
     category: "Smart Governance",
     description:
-      "Civic issue reporting platform that helps users submit, track, and discuss local problems.",
-    tech: ["React", "Node.js", "Express.js", "MongoDB", "Maps API"],
+      "AI platform that ingests citizen complaints, reports, surveys, and NGO/news data, clusters similar issues with vector embeddings, scores severity, and generates LLM-powered recommended actions in a real-time dashboard.",
+    tech: ["Next.js", "React", "Node.js", "Express.js", "PostgreSQL", "Gemini API"],
     image: "/projects/civicmind.jpg",
     host: "aicivilmind.vercel.app",
   },
   {
     slug: "sprint-field-magic",
-    category: "Project Management",
+    category: "Construction Tech",
     description:
-      "Agile project management application for organizing tasks and tracking team progress.",
+      "Helps construction teams manage projects, tasks, and location-based daily updates in one place.",
     tech: ["React", "JavaScript", "HTML", "CSS", "REST APIs"],
     image: "/projects/sprint-field-magic.jpg",
     host: "sprint-field-magic.lovable.app",

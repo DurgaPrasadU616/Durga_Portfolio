@@ -34,11 +34,11 @@ export function FeaturedProject() {
             <span className="h-px w-8 bg-brand/50" />
           </span>
           <h2 className="mt-4 text-balance text-[clamp(1.9rem,4vw,3rem)] font-bold leading-[1.08] tracking-[-0.03em]">
-            ShelfWise AI — computer vision meets retail
+            ShelfWise AI — smart inventory &amp; expiry prediction
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-ink-soft">
-            The project I&apos;m most proud of: combining TensorFlow, OpenCV, and FastAPI to automate
-            retail shelf monitoring and eliminate manual stock audits.
+            Smart inventory and expiry-loss prediction platform combining React, Node.js, and MongoDB with
+            Gemini-powered recommendations and an OCR invoice pipeline.
           </p>
         </FadeUp>
 

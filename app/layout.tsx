@@ -66,9 +66,9 @@ const jsonLd = {
   address: { "@type": "PostalAddress", addressRegion: Info.location },
   knowsAbout: [
     "HTML5", "CSS3", "React", "Next.js", "Tailwind CSS", "Bootstrap",
-    "Generative AI", "RAG", "Gemini API", "OpenAI API", "OpenCV", "TensorFlow", "PyTorch", "OCR",
+    "Generative AI", "RAG", "Vector Embeddings", "pgvector", "Gemini API", "OpenAI API", "OCR",
     "Python", "JavaScript", "TypeScript", "C", "SQL",
-    "Node.js", "Express.js", "FastAPI", "Flask", "REST APIs",
+    "Node.js", "Express.js", "REST APIs",
     "MySQL", "MongoDB", "PostgreSQL", "Supabase",
     "Git", "GitHub", "VS Code", "Vercel", "Netlify",
   ],

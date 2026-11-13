@@ -148,16 +148,17 @@ export default function ResumePage() {
               <div>
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h3 className="font-bold text-ink text-sm sm:text-base">
-                    ShelfWise AI — AI &amp; Computer Vision
+                    ShelfWise AI — AI &amp; Retail Tech
                   </h3>
                   <span className="text-xs font-semibold text-ink-soft">2025 · Live Demo</span>
                 </div>
                 <p className="text-xs text-brand font-medium">
-                  Python, OpenCV, TensorFlow, PyTorch, FastAPI, React
+                  React, Node.js, Express.js, MongoDB, Gemini API, OCR
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-                  AI-powered inventory monitoring system designed to detect shelf issues and support
-                  inventory management.
+                  Smart inventory and expiry-loss prediction platform that tracks stock, predicts expiry
+                  risk, and supports purchase decisions with Gemini-powered recommendations and an OCR
+                  invoice pipeline.
                 </p>
               </div>
 
@@ -168,24 +169,29 @@ export default function ResumePage() {
                   </h3>
                   <span className="text-xs font-semibold text-ink-soft">2025 · Live Demo</span>
                 </div>
-                <p className="text-xs text-brand font-medium">React, Node.js, Express.js, MongoDB, Maps API</p>
+                <p className="text-xs text-brand font-medium">
+                  Next.js, React, Node.js, Express.js, PostgreSQL, Gemini API
+                </p>
                 <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-                  Civic issue reporting platform that helps users submit, track, and discuss local
-                  problems.
+                  AI platform that ingests citizen complaints, reports, surveys, and NGO/news data,
+                  clusters similar issues with vector embeddings, scores severity, and generates
+                  LLM-powered recommended actions in a real-time dashboard.
                 </p>
               </div>
 
               <div>
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h3 className="font-bold text-ink text-sm sm:text-base">
-                    Sprint Field Magic — Project Management
+                    Sprint Field Magic — Construction Tech
                   </h3>
                   <span className="text-xs font-semibold text-ink-soft">2025 · Live Demo</span>
                 </div>
                 <p className="text-xs text-brand font-medium">React, JavaScript, HTML, CSS, REST APIs</p>
                 <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-                  Agile project management application for organizing tasks and tracking team
-                  progress.
+                  Helps construction teams manage projects, tasks, and location-based daily updates in one place.
+                </p>
+                <p className="mt-1 text-xs text-ink-soft">
+                  <strong className="text-ink">Contribution:</strong> Applied a routine security update to the app&apos;s packages.
                 </p>
               </div>
             </div>
@@ -201,14 +207,14 @@ export default function ResumePage() {
                 <strong className="text-ink">Frontend:</strong> HTML5, CSS3, React, Next.js, Tailwind CSS, Bootstrap
               </div>
               <div>
-                <strong className="text-ink">AI &amp; Machine Learning:</strong> Generative AI, RAG, Gemini API,
-                OpenAI API, OpenCV, TensorFlow, PyTorch, OCR
+                <strong className="text-ink">AI &amp; Machine Learning:</strong> Generative AI, RAG, Vector Embeddings,
+                pgvector, Gemini API, OpenAI API, OCR
               </div>
               <div>
                 <strong className="text-ink">Programming:</strong> Python, JavaScript, TypeScript, C, SQL
               </div>
               <div>
-                <strong className="text-ink">Backend:</strong> Node.js, Express.js, FastAPI, Flask, REST APIs
+                <strong className="text-ink">Backend:</strong> Node.js, Express.js, REST APIs
               </div>
               <div>
                 <strong className="text-ink">Databases:</strong> MySQL, MongoDB, PostgreSQL, Supabase
